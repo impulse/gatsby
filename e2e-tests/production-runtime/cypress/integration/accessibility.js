@@ -9,7 +9,8 @@ describe(`focus management`, () => {
   })
 
   it(`Focus router wrapper after navigation to regular page (to index)`, () => {
-    cy.visit(`/page-2/`).waitForRouteChange()
+    cy.visit(`/page-1023909123/`).waitForRouteChange()
+    // cy.visit(`/page-2/`).waitForRouteChange()
 
     cy.changeFocus()
     cy.assertRouterWrapperFocus(false)

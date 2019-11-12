@@ -95,7 +95,7 @@ jobs:
     executor: node
     steps:
       - slack/status:
-          channel: "eng-core"
+          channel: eng-react-integration-status
 
   bootstrap:
     executor: node
