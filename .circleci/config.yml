@@ -93,6 +93,7 @@ version: 2.1
 jobs:
   notify-slack-status:
     executor: node
+    when: always
     steps:
       - slack/status:
           channel: eng-react-integration-status
